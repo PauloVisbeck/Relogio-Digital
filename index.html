@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Relógio Digital</title>
+</head>
+
+<body>
+    <main>
+        <section id="mostrador">
+            <div><span id="dezenaHora">0</span></div>
+            <div><span id="unidadeHora">0</span></div>
+            <div><span id="doisPontos">:</span></div>
+            <div><span id="dezenaMinuto">0</span></div>
+            <div><span id="unidadeMinuto">0</span></div>
+            <div id="divSeg"><span id="dezenaSegundo" class="segundos">0</span></div>
+            <div id="divSeg"><span id="unidadeSegundo" class="segundos">0</span></div>
+        </section>
+        <aside>
+            <button onclick="aumentaHora()" class="ajusteMaisHora">+</button>
+            <p>Hora</p>
+            <button onclick="diminuiHora()" class="ajusteMenosHora">--</button>
+            <button onclick="aumentaMinuto()" class="ajusteMaisMinuto">+</button>
+            <p>Minuto</p>
+            <button onclick="diminuiMinuto()" class="ajusteMenosMinuto">--</button>
+        </aside>
+        <footer>
+            <button onclick="iniciar()" id="start">Start<span class="hover-effect"></span></button>
+            <button onclick="parar()" id="stop">Stop<span class="hover-effect"></span></button>    
+        </footer>
+        
+    </main>
+
+
+    
+</body>
+<script src="./script.js"></script>
+
+</html>
